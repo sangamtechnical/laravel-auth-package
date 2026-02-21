@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use SangamTechnical\AuthPackage\Controllers\AuthController;
 
-Route::group(['namespace' => 'YourName\AuthPackage\Controllers', 'middleware' => ['web']], function () {
+Route::group(['namespace' => 'SangamTechnical\AuthPackage\Controllers', 'middleware' => ['web']], function () {
     Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
     Route::post('login', [AuthController::class, 'login']);
     Route::get('register', [AuthController::class, 'showRegisterForm'])->name('register');
