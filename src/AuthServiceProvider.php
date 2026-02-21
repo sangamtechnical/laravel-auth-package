@@ -11,13 +11,13 @@ class AuthServiceProvider extends ServiceProvider
         // Load routes
         $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
 
-        // Load views
-        $this->loadViewsFrom(__DIR__ . '/views', 'authpackage');
+        // Load views from the correct path and map to 'auth' namespace
+        $this->loadViewsFrom(__DIR__ . '/../views', 'auth');
 
-        // Publish assets if needed
+        // Optional: publish views to host project
         $this->publishes([
-            __DIR__ . '/views' => resource_path('views/vendor/authpackage'),
-        ]);
+            __DIR__ . '/../views' => resource_path('views/vendor/auth'),
+        ], 'auth-views');
     }
 
     public function register()
