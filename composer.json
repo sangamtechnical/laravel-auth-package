@@ -19,11 +19,13 @@
     "php": "^8.0",
     "illuminate/support": "^10.0",
     "illuminate/auth": "^10.0"
-  }
+  },
   "repositories": [
     {
-        "type": "vcs",
-        "url": "https://github.com/sangamtechnical/laravel-auth-package.git"
+      "type": "vcs",
+      "url": "https://github.com/sangamtechnical/laravel-auth-package.git"
     }
-]
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
