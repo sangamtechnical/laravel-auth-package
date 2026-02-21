@@ -9,5 +9,5 @@ Route::group(['namespace' => 'SangamTechnical\AuthPackage\Controllers', 'middlew
     Route::get('register', [AuthController::class, 'showRegisterForm'])->name('register');
     Route::post('register', [AuthController::class, 'register']);
     Route::get('forgot-password', [AuthController::class, 'showForgotForm'])->name('password.request');
-    Route::post('forgot-password', [AuthController::class, 'sendResetLinkEmail']);
+    Route::post('forgot-password', [AuthController::class, 'sendResetLinkEmail'])->name('password.email');
 });
