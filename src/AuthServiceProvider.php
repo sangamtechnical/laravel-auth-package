@@ -1,6 +1,6 @@
 <?php
 
-namespace YourName\AuthPackage;
+namespace SangamTechnical\AuthPackage;
 
 use Illuminate\Support\ServiceProvider;
 
