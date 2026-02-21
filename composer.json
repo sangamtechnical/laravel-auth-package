@@ -1,0 +1,23 @@
+{
+  "name": "yourname/laravel-auth-package",
+  "description": "Reusable authentication package for Laravel",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "YourName\\AuthPackage\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "YourName\\AuthPackage\\AuthServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^10.0",
+    "illuminate/auth": "^10.0"
+  }
+}
