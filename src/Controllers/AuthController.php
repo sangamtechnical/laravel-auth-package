@@ -1,6 +1,6 @@
 <?php
 
-namespace YourName\AuthPackage\Controllers;
+namespace SangamTechnical\AuthPackage\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
