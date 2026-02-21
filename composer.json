@@ -20,4 +20,10 @@
     "illuminate/support": "^10.0",
     "illuminate/auth": "^10.0"
   }
+  "repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/sangamtechnical/laravel-auth-package.git"
+    }
+]
 }
