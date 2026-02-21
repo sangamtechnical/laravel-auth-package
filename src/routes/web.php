@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use YourName\AuthPackage\Controllers\AuthController;
+use SangamTechnical\AuthPackage\Controllers\AuthController;
 
 Route::group(['namespace' => 'YourName\AuthPackage\Controllers', 'middleware' => ['web']], function () {
     Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
